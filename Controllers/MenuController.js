@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const moment = require("moment");
+const ContactController = require("./ContactController");
 
 module.exports = class MenuController {
     constructor(){
@@ -16,7 +17,7 @@ module.exports = class MenuController {
             }
         ];
 
-    this.contacts = []
+      this.book = new ContactController();
 
     }
 

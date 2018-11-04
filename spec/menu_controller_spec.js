@@ -9,7 +9,7 @@ describe("MenuController", ()=> {
           expect(this.menu.getContactCount()).toBe(0);
       });
       it("should return 1 when one contact is in the book", ()=> {
-          this.menu.contacts.push("Contact");
+        this.menu.book.addContact("Bob", "555-555-5555");
           expect(this.menu.getContactCount()).toBe(1);
       })
   });
