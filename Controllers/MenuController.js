@@ -14,7 +14,9 @@ module.exports = class MenuController {
                     "Get Date"
                 ]
             }
-        ]
+        ];
+
+    this.contacts = []
 
     }
 
@@ -55,6 +57,10 @@ module.exports = class MenuController {
         this.clear();
         console.log(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"))
         this.main();
+    }
+
+    getContactCount(){
+        return this.contacts.length;
     }
 
     exit() {
