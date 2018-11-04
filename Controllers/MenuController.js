@@ -47,6 +47,10 @@ module.exports = class MenuController {
         console.log("\x1Bc");
     }
 
+    remindMe() {
+        return "Learning is a life-long pursuit"
+    }
+
     addContact() {
         this.clear();
         console.log("addContact called");
